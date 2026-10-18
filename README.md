@@ -10,6 +10,14 @@ This project uses historical battery-cycle data and Machine Learning regression 
 
 The project was developed using Python and Jupyter Notebook.
 
+## 🌐 Live Demo
+
+The Battery Health Predictor is deployed as a Streamlit web application.
+
+👉 **[Launch Battery Health Predictor](https://batteryhealthpredictor.streamlit.app/)**
+
+The application allows users to enter battery operating parameters manually and obtain a predicted battery capacity and battery health result.
+
 ## 🎯 Objective
 
 The main objective of this project is to:
@@ -82,7 +90,7 @@ The project uses regression algorithms to predict battery capacity.
 
 A Linear Regression model is trained using standardized input features.
 
-The project uses `StandardScaler` to standardize the training and testing features before applying Linear Regression. 
+The project uses `StandardScaler` to standardize the training and testing features before applying Linear Regression.
 
 ### Random Forest Regression
 
@@ -93,100 +101,3 @@ RandomForestRegressor(
     n_estimators=100,
     random_state=42
 )
-```
-
-The model is trained on the battery dataset and used to generate capacity predictions.
-
-## 📈 Model Evaluation
-
-The Linear Regression model is evaluated using:
-
-- Mean Absolute Error (MAE)
-- Root Mean Squared Error (RMSE)
-- R² Score
-
-### Linear Regression Results
-
-| Metric | Result |
-|---|---:|
-| MAE | 0.0734 Ah |
-| RMSE | 0.0865 Ah |
-| R² Score | 0.2731 |
-
-The notebook also compares actual and predicted battery capacity values to evaluate the model's prediction behavior.
-
-## 🛠️ Technologies Used
-
-- Python
-- Jupyter Notebook
-- Pandas
-- NumPy
-- Matplotlib
-- Seaborn
-- Scikit-learn
-
-## 📂 Project Structure
-
-```text
-Battery_Health_Predictor/
-│
-├── main.ipynb
-├── battery_health_data.csv
-└── README.md
-```
-
-## ▶️ How to Run
-
-### 1. Clone the repository
-
-```bash
-git clone https://github.com/omkarsatpute18/Battery_Health_Predictor.git
-```
-
-### 2. Navigate to the project
-
-```bash
-cd Battery_Health_Predictor
-```
-
-### 3. Install required libraries
-
-```bash
-pip install pandas numpy matplotlib seaborn scikit-learn jupyter
-```
-
-### 4. Launch Jupyter Notebook
-
-```bash
-jupyter notebook
-```
-
-Open:
-
-```text
-main.ipynb
-```
-
-Make sure `battery_health_data.csv` is present in the same project directory.
-
-## 🚀 Future Improvements
-
-Possible improvements for this project include:
-
-- Hyperparameter tuning of the regression models.
-- Comparing additional regression algorithms.
-- Improving prediction accuracy.
-- Feature engineering based on battery degradation characteristics.
-- Deploying the trained model as a web application.
-- Adding real-time battery health prediction.
-- Developing a dashboard for battery monitoring.
-
-## 👨‍💻 Author
-
-**Omkar Satpute**
-
-GitHub: [@omkarsatpute18](https://github.com/omkarsatpute18)
-
----
-
-⭐ If you find this project useful, consider giving the repository a star!
